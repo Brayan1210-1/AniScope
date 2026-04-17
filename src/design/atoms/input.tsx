@@ -1,15 +1,24 @@
-/*
+
 interface InputProps {
-    name: string;
+    type: string;
+    label: string;
     placeHolder: string;
-    style?: string;
+    value: string;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export function Input({ name, placeHolder, style }: InputProps) {
+export function Input(props: InputProps) {
     return (
-        <input className={`bg-white border-2 border-black ${style}`} placeholder={placeHolder}  >
-            {name}
-        </input>
+        <div>
+            <label className="" > {props.label}</label>
+            <input className={`bg-white border-2 border-black `}
+                id={props.label}
+                placeholder={props.placeHolder}
+                onChange={props.onChange}
+                value={props.value}
+                type={props.type}
+            >
+            </input>
+        </div>
     )
 }
-    */

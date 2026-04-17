@@ -1,25 +1,23 @@
 interface SkeletonProps {
-    style?: string
+
 }
 
 
-export function Skeleton({ style }: SkeletonProps) {
+export function Skeleton() {
 
     return (
-        <div className={`bg-gray-400 p-2 max-w-70 min-h-80 m-10  ${style}`} >
+        <div className="bg-gray-300 p-2 max-w-70 min-h-80 m-10 columns-2">
 
-            <header className="bg-gray-600 max-inline-3xl">
-                <p> .</p>
-            </header>
+            <div className="justify-items-start row-span-4 min-160">
+                <h1 className="bg-gray-400 size-full"> . </h1>
+                <h2 className="h-100 w-31 bg-gray-400 p-10 mb-px-0.5">. </h2>
+            </div>
 
-            <body>
-                <p> . </p>
-            </body>
+            <div className="justify-items-end">
+                <h1>-.</h1>
+            </div>
 
-            <footer className="bg-gray-600 content-end">
-                <p> .</p>
-            </footer>
 
-        </div>
+        </ div>
     )
 }
