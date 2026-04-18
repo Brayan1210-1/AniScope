@@ -1,8 +1,3 @@
-interface SkeletonProps {
-
-}
-
-
 export function Skeleton() {
 
     return (
