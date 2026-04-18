@@ -1,4 +1,4 @@
-import { AnimeListPage } from '@/modules/anime/pages/anime-list.page'
+import { AppRoutes } from './AppRoutes'
 
 import '../index.css'
 
@@ -7,11 +7,7 @@ function App() {
 
   return (
 
-    <div>
-      <AnimeListPage />
-
-
-    </div>
+    <AppRoutes />
 
 
   )
